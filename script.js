@@ -1,6 +1,5 @@
 const form = document.getElementById("form");
 const user = document.getElementById("Username");
-
 const email = document.getElementById("Email");
 const pass = document.getElementById("Password");
 const pass2 = document.getElementById("confirm-password");
