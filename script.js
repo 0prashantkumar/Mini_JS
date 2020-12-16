@@ -73,12 +73,6 @@ function showSuccess(input) {
   formcontrol.className = "form-control success";
 }
 
-// function isValidEmail(email) {
-//   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//   return re.test(String(email).toLowerCase());
-// }
-
-//Event
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -87,27 +81,4 @@ form.addEventListener("submit", function (e) {
   checkLength(pass, 6, 20);
   checkEmail(email);
   checkPasswords(pass, pass2);
-
-  // if (user.value === "") {
-  //   showError(user, "Username is required");
-  // } else {
-  //   showSuccess(user);
-  // }
-  // if (email.value === "") {
-  //   showError(email, "Email is required");
-  // } else if (!isValidEmail(email)) {
-  //   showError(email, "Email is not VALID");
-  // } else {
-  //   showSuccess(email);
-  // }
-  // if (pass.value === "") {
-  //   showError(pass, "Password is required");
-  // } else {
-  //   showSuccess(pass);
-  // }
-  // if (pass2.value === "") {
-  //   showError(pass2, "Pass 2 is required");
-  // } else {
-  //   showSuccess(pass2);
-  // }
 });
